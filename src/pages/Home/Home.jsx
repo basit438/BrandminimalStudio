@@ -4,6 +4,8 @@ import gsap from "gsap";
 import { Link } from "react-router-dom";
 import About from "../../components/About";
 import Services from "../../components/Services";
+import ContactUs from "../../components/Contact";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   const sphereContainer = useRef(null);
@@ -72,6 +74,8 @@ const Home = () => {
     </section>
     <About/>
     <Services/>
+    <ContactUs/>
+    <Footer/>
     </>
   );
 };

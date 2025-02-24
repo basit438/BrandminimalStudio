@@ -59,19 +59,27 @@ const AboutUs = () => {
         </motion.p>
 
         {/* Call-to-Action Buttons */}
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center w-full">
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="w-full sm:w-auto"
+          >
             <Link
               to="/services"
-              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-bold border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition duration-300"
+              className="block w-full text-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-bold border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition duration-300"
             >
               Our Services
             </Link>
           </motion.div>
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="w-full sm:w-auto"
+          >
             <Link
               to="/contact"
-              className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-bold bg-blue-500 text-white hover:bg-blue-600 transition duration-300"
+              className="block w-full text-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-bold bg-blue-500 text-white hover:bg-blue-600 transition duration-300"
             >
               Get in Touch
             </Link>
